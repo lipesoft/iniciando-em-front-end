@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+    <title>Login & Cadastro - Interpretador de Sonhos</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="nuvem"></div>
+      
+        <div id="form-login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="login-email">E-mail:</label>
+                <input type="email" id="login-email" placeholder="Digite seu e-mail" required>
+                
+                <label for="login-password">Senha:</label>
+                <input type="password" id="login-password" placeholder="Digite sua senha" required>
+                
+                <button type="submit" class="botao-formulario">Entrar</button>
+            </form>
+            <p class="alternativa">Não tem conta? <button class="alternar-botao" onclick="mostrarCadastro()">Cadastre-se</button></p>
+        </div>
+
+        <div id="form-cadastro" style="display: none;">
+            <h2>Cadastro</h2>
+            <form id="cadastroForm">
+                <label for="cadastro-nome">Nome:</label>
+                <input type="text" id="cadastro-nome" placeholder="Digite seu nome completo" required>
+
+                <label for="cadastro-email">E-mail:</label>
+                <input type="email" id="cadastro-email" placeholder="Digite seu e-mail" required>
+                
+                <label for="cadastro-password">Senha:</label>
+                <input type="password" id="cadastro-password" placeholder="Digite sua senha" required>
+                
+                <label for="cadastro-confirm-password">Confirme a Senha:</label>
+                <input type="password" id="cadastro-confirm-password" placeholder="Confirme sua senha" required>
+
+                <button type="submit" class="botao-formulario">Cadastrar</button>
+            </form>
+            <p class="alternativa">Já tem uma conta? <button class="alternar-botao" onclick="mostrarLogin()">Login</button></p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
