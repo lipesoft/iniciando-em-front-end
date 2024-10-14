@@ -1,0 +1,200 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8E8FF; /* Fundo em azul claro */
+    color: #333; /* Texto escuro para melhor contraste */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Cabeçalho fixado no topo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #A9C5F4; /* Azul claro para o cabeçalho */
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+header nav ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #A9C5F4; /* Azul claro */
+}
+
+header nav ul.menu li {
+    margin: 0 15px;
+}
+
+header nav ul.menu li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Texto branco */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav ul.menu li a:hover {
+    color: #6B9FF9; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Container centralizado */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #D3D3D3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    color: #4A4A4A; /* Texto escuro */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo do input e textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #E0E0E0; /* Cinza claro */
+    color: #333; /* Texto escuro */
+    border: none;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+.alternativa{
+    font-size: small;
+    margin-top: 5px;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6B9FF9; /* Azul claro */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    color: #4A80E5; /* Azul mais escuro no hover */
+}
+
+/* Botão específico para alternar entre login e cadastro */
+.alternar-botao {
+    background: none;
+    border: none;
+    color: #6B9FF9;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.alternar-botao:hover {
+    color: #4A80E5;
+}
+
+/* Ajusta os links de navegação */
+footer {
+    font-size: small;
+    background-color: #A9C5F4; /* Azul claro */
+    color: #4A4A4A; /* Texto escuro */
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Página de interpretação */
+.introducao {
+    text-align: center;
+    font-size: small;
+    text-align: center;
+}
+
+.titulo{
+    margin-bottom: 150px;
+}
+
+.formulario-sonho {
+    background-color: #F4F4F4; /* Fundo claro */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#resultadoSonho {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #6B9FF9; /* Azul claro */
+    border-radius: 10px;
+}
+
+/* Nuvem para área de login */
+.nuvem {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #FFFFFF; /* Cor da nuvem */
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    top: 0;
+}
+
+.nuvem::before,
+.nuvem::after {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+
+.nuvem::before {
+    top: -40px;
+    left: 23px;
+}
+
+.nuvem::after {
+    top: -25px;
+    right: 25px;
+}

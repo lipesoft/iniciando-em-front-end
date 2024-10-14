@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretador de Sonhos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <h1 class="titulo">INTERPRETADOR DE SONHOS</h1>
+            <p>Descubra o significado dos seus sonhos de maneira rápida e precisa. Insira os detalhes do seu sonho abaixo para obter uma interpretação personalizada.</p>
+        </section>
+        
+        <section class="formulario-sonho">
+            <h2>Descreva seu sonho:</h2>
+            <textarea id="dreamInput" placeholder="Digite aqui seu sonho..." rows="4"></textarea>
+            <button class="button" id="submitButton">Interpretar Sonho</button>
+        </section>
+
+        <section id="resultadoSonho" style="display: none;">
+            <h2>Interpretação do Sonho:</h2>
+            <p id="dreamResult">Aqui aparecerá a interpretação do seu sonho...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interpretador de Sonhos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
